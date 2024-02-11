@@ -12,13 +12,13 @@ const UserCard = ({ user }) => {
             <figure><img src={image} alt="car!" className="h-44" /></figure>
             <div className="card-body p-3">
                 <Link to={`/user-details/${id}`} className="gradient-text inline-block text-lg font-medium">{firstName + " " + lastName}</Link>
-                <div className="tooltip tooltip-left" data-tip="Email">
-                    <p className='flex justify-start items-center gap-2'><MdEmail /> <span>{email}</span></p>
+                <div className="tooltip tooltip-top" data-tip="Email">
+                    <p className='flex justify-start items-center gap-2 text-start'><MdEmail /> <span>{email}</span></p>
                 </div>
-                <div className="tooltip tooltip-left" data-tip="Company Name">
-                    <p className='flex justify-start items-center gap-2'><BsBuildingsFill /> <span>{company.name}</span></p>
+                <div className="tooltip tooltip-top" data-tip="Company Name">
+                    <p className='flex justify-start items-center gap-2 text-start'><BsBuildingsFill /> <span>{company.name}</span></p>
                 </div>
-                <div className="tooltip tooltip-left" data-tip="Address">
+                <div className="tooltip tooltip-top" data-tip="Address">
                     <p className='flex justify-start items-center gap-2 text-start'><FaLocationDot /> <span>{address.address + ", " + address.city + ", " + address.state}</span></p>
                 </div>
                 <div className="card-actions justify-end">
