@@ -41,11 +41,17 @@ const Users = () => {
         const searchText = document.getElementById("search").value;
         const filteredUsers = fetchedUsers.filter((user) => (user.firstName + user.lastName).toLowerCase().includes(searchText.toLowerCase()));
         setUsers(filteredUsers);
+
+        //Clearing the input field
         if (searchText.length)
             setSearchSummery(`Results for ${searchText}, ${filteredUsers?.length} items found.`);
         else
             setSearchSummery("");
         document.getElementById("search").value = "";
+
+        //Reset the sort select option
+        const test = document.getElementById("selectSortOptions");
+        test.value = "1";
     }
 
 
@@ -69,8 +75,8 @@ const Users = () => {
                     </div>
                     <div className="custom-input grid grid-cols-2 px-3 py-1 gap-1 w-64">
                         <label className='font-medium text-[#ff6c6c]'><span className="flex items-center gap-1"><FaSortAlphaDown /> Sort by</span></label>
-                        <select className="outline-none w-full font-medium text-[#7d5fff]" onChange={handlerSort}>
-                            <option disabled selected>Pick Option</option>
+                        <select id="selectSortOptions" className="outline-none w-full font-medium text-[#7d5fff]" onChange={handlerSort}>
+                            <option disabled selected value={"1"}>Pick Option</option>
                             <option>Name</option>
                             <option>Email</option>
                             <option>Company</option>
