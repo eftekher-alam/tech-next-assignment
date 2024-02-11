@@ -4,7 +4,7 @@ import "./NavBar.css"
 const NavBar = () => {
 
     const navItems = <>
-        <li><NavLink to={"/"}>HOME</NavLink></li>
+        <li><NavLink to={"/"} className={"button text-violet-500"}>HOME</NavLink></li>
     </>
     return (
 

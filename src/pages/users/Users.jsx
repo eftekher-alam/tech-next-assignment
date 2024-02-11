@@ -56,7 +56,7 @@ const Users = () => {
 
 
     return (
-        <div className="m-10 mt-8">
+        <div className="m-10 mt-5">
             {
                 isLoading && <LoadingAnimation></LoadingAnimation>
             }

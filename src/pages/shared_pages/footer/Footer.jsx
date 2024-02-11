@@ -9,16 +9,15 @@ import moment from "moment/moment";
 
 const Footer = () => {
     return (
-        <footer data-aos="fade-up">
+        <footer>
             <div className="footer p-10 bg-base-200 text-base-content" >
-                <aside data-aos="fade-up" data-aos-delay="100">
+                <aside>
                     <Link to={"/"}
                         className="font-bold text-2xl md:text-3xl tracking-wide md:tracking-widest  text-[#ff6c6c]"
                     >Technext <span className="text-[#7d5fff]">Assignment</span></Link>
                     <p>Technext Limited<br />Providing reliable tech since 2012</p>
                 </aside>
-                <nav data-aos="fade-up"
-                    data-aos-delay="200">
+                <nav >
                     <header className="gradient-text text-lg font-bold uppercase">Contact Info</header>
                     <a className="link link-hover flex gap-2 items-center">
                         <FaPhone className="text-violet-700" /> <span>+1 302 433 6002</span>
@@ -31,8 +30,7 @@ const Footer = () => {
                         <span>Rupayan Shefford, Shyamoli, Level 14, Dhaka, BD</span>
                     </a>
                 </nav>
-                <nav data-aos="fade-up"
-                    data-aos-delay="300">
+                <nav>
                     <header className="gradient-text text-lg font-bold uppercase">Social</header>
                     <div className="grid grid-flow-col gap-4">
 

@@ -19,7 +19,7 @@ const UserCard = ({ user }) => {
                     <p className='flex justify-start items-center gap-2 text-start'><BsBuildingsFill /> <span>{company.name}</span></p>
                 </div>
                 <div className="tooltip tooltip-top" data-tip="Address">
-                    <p className='flex justify-start items-center gap-2 text-start'><FaLocationDot /> <span>{address.address + ", " + address.city + ", " + address.state}</span></p>
+                    <p className='flex justify-start items-center gap-2 text-start'><FaLocationDot /> <span>{address?.address + ", " + address?.city + ", " + address?.state}</span></p>
                 </div>
                 <div className="card-actions justify-end">
 
