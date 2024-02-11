@@ -6,9 +6,9 @@ import { Link } from 'react-router-dom';
 
 const UserCard = ({ user }) => {
     const { id, image, firstName, lastName, email, address, company } = user;
-    console.log(user);
+    // console.log(user);
     return (
-        <div className="card  glass">
+        <div className="card  glass" data-aos="fade-up">
             <figure><img src={image} alt="car!" className="h-44" /></figure>
             <div className="card-body p-3">
                 <Link to={`/user-details/${id}`} className="gradient-text inline-block text-lg font-medium">{firstName + " " + lastName}</Link>
