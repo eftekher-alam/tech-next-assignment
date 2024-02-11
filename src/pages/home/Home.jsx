@@ -6,7 +6,9 @@ const Home = () => {
     return (
         <div>
             <NavBar></NavBar>
-            <Outlet></Outlet>
+            <div className="min-h-screen">
+                <Outlet></Outlet>
+            </div>
             <Footer></Footer>
         </div>
     );
