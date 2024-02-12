@@ -15,5 +15,10 @@ This is a simple user management website that assigned by Technext Limited for p
 
 ### Home page
 
-![Home Page]()
+![Home-Page](https://raw.githubusercontent.com/eftekher-alam/tech-next-assignment/main/public/home-page.png)
+
+### User details page
+
+![User-details-Page](https://raw.githubusercontent.com/eftekher-alam/tech-next-assignment/main/public/user-details.png)
+
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
