@@ -8,6 +8,7 @@ const UserDetails = () => {
     const [user, setUser] = useState([]);
 
     useEffect(() => {
+        scrollTo(0, 0);
         axios.get("https://dummyjson.com/users")
             .then(res => {
                 setUsers(res.data.users);
