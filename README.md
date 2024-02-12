@@ -1,6 +1,9 @@
 # Technext Assignment Doc
 This is a simple user management website that assigned by Technext Limited for programming test for the position "Software Engineer Intern Front-end (React JS)"
 
+## Links
+- Live preview : https://tech-next-assignment.web.app
+
 ## Used technologies 
 **1. ReactJS** - A JavaScript library for building user interfaces  
 **2. TailwindCSS** - A utility-first CSS framework for rapidly building modern websites  
