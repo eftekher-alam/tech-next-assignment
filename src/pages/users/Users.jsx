@@ -112,7 +112,7 @@ const Users = () => {
                 !isLoading && <div className="flex justify-center items-center gap-5 lg:gap-10 pb-7 flex-wrap" data-aos="fade-down">
                     <div className="custom-input rounded-none py-1 w-64" >
                         <div className="flex">
-                            <input id="search" type='text' autoComplete="off" placeholder="Search by user's name" className="outline-none pl-3 text-black" />
+                            <input id="search" type='text' autoComplete="off" placeholder="Search by user's name" className="outline-none md:pl-3 text-black" />
                             <button
                                 className="flex items-center gap-1 px-5 py-1 text-violet-500"
                                 onClick={handlerSearch}
@@ -123,7 +123,7 @@ const Users = () => {
                     </div>
                     <div className="custom-input grid grid-cols-2 px-3 py-1 gap-1 w-64">
                         <label className='font-medium text-[#ff6c6c]'><span className="flex items-center gap-1"><FaSortAlphaDown /> Sort by</span></label>
-                        <select id="selectSortOptions" className="outline-none w-full font-medium text-[#7d5fff]" onChange={handlerSort}>
+                        <select id="selectSortOptions" className="outline-none w-full bg-transparent font-medium text-[#7d5fff]" onChange={handlerSort}>
                             <option disabled selected value={"1"}>Pick Option</option>
                             <option>Name</option>
                             <option>Email</option>
